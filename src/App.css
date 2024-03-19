@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: start;
+}
+
+@media (max-width: 575px) {
+
+  #root {
+    max-width: 1280px;
+  }
+  
+  body {
+    display: unset;
+  }
+
+  .App {
+    flex-wrap: nowrap;
+  }
+  
+  .bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Header {
+    margin-left: 1.2cm;
+    margin-bottom: 0.8cm;
+    width: autot;
+    height: auto;
+    text-align: center;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+
+  .Name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 38.3px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .surname {
+    font-family: "Poppins", sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .mini {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .About {
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    margin-left: 50px;
+  }
+
+  .Strength {
+    margin-right: 20px;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'OSBold';
+    src: url('./fonts/OpenSauceOne-Bold.ttf') format('truetype');
+  }
+
+  .MyPic {
+    width: 5.93cm;
+    height: 5.93cm;
+    object-fit: cover;
+    object-position: 10% 20%;
+    border: 10px solid #738998;
+  }
+
+  .rectangle_left {
+    font-family: 'OSBold';
+    font-size: 15.6px;
+    width: auto;
+    height: 1.09cm;
+    background-color: #898436;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 60px; */
+    align-items: center;
+    color: white;
+    /* border-radius: 0 50px 50px 0; */
+  }
+
+  .rectangle_left p {
+    margin-left: 10px;
+  }
+
+  .rectangle_right {
+    font-family: 'OSBold';
+    font-size: 15.6px;
+    width: auto;
+    height: 1.09cm;
+    background-color: #898436;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 60px; */
+    align-items: center;
+    color: white;
+    /* border-radius: 0 50px 50px 0; */
+  }
+
+  .rectangle_right p {
+    margin-left: 10px;
+  }
+
+  .vertical-line {
+    width: 2px;
+    height: 155px;
+    background-color: black;
+    margin-left: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .custom-icon-li {
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2.5cm;
+  }
+
+  .custom-icon-li svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    flex: none;
+  }
+
+  .custom-icon-li h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    font-size: 13px;
+    margin: 0.4em;
+  }
+
+  .custom-icon-li a {
+    font-family: "Kanit", sans-serif;
+    color: black;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    font-size: 13px;
+    margin: 0.4em;
+    text-decoration: underline;
+  }
+
+  nav {
+    margin-top: 25px;
+  }
+
+  .skills {
+    margin-top: 15px;
+    margin-left: 0.3cm;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    align-items: center;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+
+  .skills h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    align-items: center;
+    font-size: 19px;
+    margin: 0px;
+    text-decoration: underline;
+  }
+
+  .skills h3 {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    align-items: center;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .progress-bar {
+    width: 80px;
+    height: 7px;
+    background-color: #E4E9EA;
+    border-radius: 10px;
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #27384C;
+    border-radius: 10px;
+  }
+
+  .contact {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .school {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .year {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .grade {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .act {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .Act {
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  .Int {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  .Lan {
+    margin-left: 50px;
+    margin-top: 75px;
+  }
+
+  .Education {
+    margin-left: 40px;
+  }
+
+  .vertical-circle {
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    margin-left: 35px;
+  }
+  
+  .vertical-circle::before,
+  .vertical-circle::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  .vertical-circle::before {
+    top: -4px; /* วงกลมบน */
+  }
+  
+  .vertical-circle::after {
+    bottom: -4px; /* วงกลมล่าง */
+  }
+}
+
+
+@media (min-width: 576px) {
+
+  #root {
+    max-width: max-content;
+  }
+
+  body {
+    display: unset;
+  }
+
+  .App {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .bar {
+    list-style: none;
+    margin: 0;
+  }
+
+  .Header {
+    margin-left: 1.2cm;
+    margin-bottom: 0.8cm;
+    width: max-content;
+    height: max-content;
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+
+  .Name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 38.3px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .surname {
+    font-family: "Poppins", sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .mini {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .About {
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    margin-left: 10px;
+  }
+
+  .Strength {
+    margin-right: 15px;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'OSBold';
+    src: url('./fonts/OpenSauceOne-Bold.ttf') format('truetype');
+  }
+
+  .MyPic {
+    width: 5.93cm;
+    height: 5.93cm;
+    object-fit: cover;
+    object-position: 10% 20%;
+    border: 10px solid #738998;
+  }
+
+  .rectangle_left {
+    font-family: 'OSBold';
+    font-size: 15.6px;
+    width: 5.7cm;
+    height: 1.09cm;
+    background-color: #898436;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+    align-items: center;
+    color: white;
+    border-radius: 0 50px 50px 0;
+  }
+
+  .rectangle_left p {
+    margin-left: 10px;
+  }
+
+  .rectangle_right {
+    font-family: 'OSBold';
+    font-size: 15.6px;
+    width: 9.6cm;
+    height: 1.09cm;
+    background-color: #898436;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: center;
+    color: white;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .rectangle_right p {
+    margin-left: 10px;
+  }
+
+  .vertical-line {
+    width: 2px;
+    height: 145px;
+    background-color: black;
+    margin-left: 190px;
+    margin-top: 10px;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .custom-icon-li {
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.5cm;
+  }
+
+  .custom-icon-li svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    flex: none;
+  }
+
+  .custom-icon-li h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    font-size: 13px;
+    margin: 0.4em;
+  }
+
+  .custom-icon-li a {
+    font-family: "Kanit", sans-serif;
+    color: black;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    font-size: 13px;
+    margin: 0.4em;
+    text-decoration: underline;
+  }
+
+  nav {
+    margin-top: 25px;
+  }
+
+  .skills {
+    margin-top: 15px;
+    margin-left: 0.3cm;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    align-items: center;
+    font-size: 19px;
+    display: flex;
+  }
+
+  .skills h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    align-items: center;
+    font-size: 19px;
+    margin: 0px;
+    text-decoration: underline;
+  }
+
+  .skills h3 {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    align-items: center;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .progress-bar {
+    width: 80px;
+    height: 7px;
+    background-color: #E4E9EA;
+    border-radius: 10px;
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #27384C;
+    border-radius: 10px;
+  }
+
+  .contact {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .school {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .year {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .grade {
+    list-style-type: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .act {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    margin-left: 15px;
+    float: right;
+  }
+
+  .Act {
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  .Int {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  .Lan {
+    margin-left: 50px;
+    margin-top: 75px;
+  }
+
+  .Education {
+    margin-left: 40px;
+  }
+
+  .vertical-circle {
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    margin-left: 35px;
+  }
+  
+  .vertical-circle::before,
+  .vertical-circle::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  .vertical-circle::before {
+    top: -4px; /* วงกลมบน */
+  }
+  
+  .vertical-circle::after {
+    bottom: -4px; /* วงกลมล่าง */
+  }
+  
+}
